@@ -1,0 +1,123 @@
+.bannerContainer {
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-image: url('/Users/Chalo/Documents/Agroanalytics/Proyectos/Landing/landing/src/components/banner-right.png'); /* Replace with the actual path to your image */
+}
+
+.leftColumn {
+  flex: 1;
+  display: flex;
+  align-items: center; /* Vertical alignment */
+  justify-content: center; /* Horizontal alignment */
+  width: 100%;
+}
+
+.centerColumn {
+  flex: 1;
+  padding: 20px;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  
+  
+}
+.rightColumn {
+  flex: 1;
+  padding: 20px;
+  position: relative;
+  left: -300px;
+  z-index: 0;
+  width: 100%;
+}
+
+.textContent {
+  max-width: 400px; /* Adjust width according to your design preference */
+
+}
+@media (max-width: 768px) {
+  .bannerContainer {
+      height: 300px; /* Smaller height for mobile devices */
+      justify-content: center;
+  }
+  
+  .centerColumn {
+    display: none;
+  }
+  .rightColumn {
+    display: none;
+  }
+  .textContent {
+    height: auto; /* Adjust width according to your design preference */
+    background-image:url('/Users/Chalo/Documents/Agroanalytics/Proyectos/Landing/landing/src/components/fondo.png') ;
+    
+    
+    h1 {
+      font-size: 20px;
+    
+    }
+    p {
+      font-size: 14px;
+      word-wrap: break-word;
+      justify-content: center;
+    }
+  }
+  
+}
+.bannerImage {
+  width: 100%;
+  height: auto;
+  padding: 30px;
+ 
+}
+
+.bannerButton {
+  background-color: #4C3F91; /* Primary button color */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.bannerButton:hover {
+  background-color: #372774; /* Darker shade for hover effect */
+}
+
+body {
+  font-family: 'Arial', sans-serif; /* Adjust the font-family as per design requirement */
+}
+
+
+p {
+  font-size: 1rem;
+  color: #666;
+}
+
+.container {
+  padding: 20px;
+}
+
+.section {
+  margin-bottom: 40px;
+}
+.header {
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 24px; /* Adjust size to suit design */
+  color: #333;
+}
+
+p {
+  font-size: 16px;
+  color: #666;
+}
+
+/* Further adjustments based on specific layout needs */
+
+/* Additional specific styles can be added here */

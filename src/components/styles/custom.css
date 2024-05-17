@@ -1,0 +1,291 @@
+.app-header {
+    padding: 10px 50px; /* Adjust padding as needed */
+    background: #fff; /* Or any other color based on your design */
+  }
+
+.site-card-wrapper .ant-card {
+    margin: 20px 0;
+}
+/* src/components/styles/custom.css */
+
+:root {
+    --primary-color: #4CAF50; /* Green color for primary buttons and links */
+    --text-color: #333; /* Dark grey for text */
+    --background-color: #F0F2F5; /* Off-white background */
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: 'Arial', sans-serif;
+}
+
+.header, .footer {
+    background-color: #FFF;
+    padding: 10px 50px;
+}
+
+.main-banner, .contact-cta {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #FFF;
+}
+
+.menu {
+    background-color: #FFF;
+    border-bottom: 2px solid var(--primary-color);
+}
+
+
+
+/* More custom styles as needed */
+/* src/components/styles/custom.css */
+
+/* Hide mobile menu on larger screens */
+.desktopVisible {
+    display: none;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+    .desktopVisible {
+        display: none;
+    }
+    .mobileVisible {
+        display: block;
+    }
+}
+
+/* Desktop styles */
+@media (min-width: 769px) {
+    .desktopVisible {
+        display: block;
+    }
+    .mobileVisible {
+        display: none;
+    }
+}
+
+/* src/components/styles/custom.css */
+
+/* General button styling */
+.ant-btn {
+    border-radius: 10px; /* Rounded corners */
+    transition: background-color 0.3s, border-color 0.3s, color 0.3s; /* Smooth transitions */
+}
+
+/* Primary button styling */
+/* src/components/styles/custom.css */
+
+/* Primary button styling adjustments */
+.ant-btn-primary {
+    background-color: var(--primary-color); /* Primary green color */
+    border-color: var(--primary-color);
+    color: white; /* Ensuring text is white */
+    transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+}
+
+/* Hover and focus effects for primary button */
+.ant-btn-primary:hover,
+.ant-btn-primary:focus {
+    background-color: #66bb6a; /* Lighter shade on hover/focus */
+    border-color: lighten(var(--primary-color), 10%);
+}
+
+/* Active state - when the button is clicked */
+.ant-btn-primary:active {
+    background-color: #388e3c; /* Darker shade when active */
+    border-color: darken(var(--primary-color), 10%);
+    color: white; /* Keep text color white for contrast */
+}
+
+
+
+
+/* Link hover effects */
+a {
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: var(--primary-color); /* Change color on hover */
+}
+
+/* Menu item hover effects */
+.ant-menu-item:hover {
+    background-color: var(--primary-color); /* Change background on hover */
+    color: white; /* Change text color for better visibility */
+}
+/* Card styling */
+.ant-card {
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s;
+}
+
+.ant-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Section styling */
+.section {
+    padding: 40px;
+    border-radius: 15px;
+    margin: 20px 0;
+    transition: background-color 0.3s;
+}
+
+.section:hover {
+    background-color: #f9f9f9; /* Light grey background on hover for sections */
+}
+
+/* Navbar styling */
+.header {
+    padding: 10px 50px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Navbar links */
+.header .ant-menu-item {
+    transition: color 0.3s, background-color 0.3s;
+}
+
+.header .ant-menu-item:hover {
+    background-color: #e6f7ff; /* Light blue background on hover */
+    color: var(--primary-color); /* Change text color */
+}
+
+.ant-row {
+    align-items: center; /* Ensures vertical alignment is centered */
+  }
+  
+  .ant-menu-horizontal {
+    border-bottom: none; /* Removes the border under the menu if not needed */
+  }
+
+body {
+    background-color: #f0f2f5;
+    color: #333;
+    font-family: 'Helvetica Neue', Arial, sans-serif; /* Modern, clean font */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #333;
+    font-weight: 600;
+}
+
+p {
+    line-height: 1.6; /* Improve readability */
+}
+
+.service-section .ant-col {
+    display: flex;
+    justify-content: center;
+  }
+  
+.service-section .ant-card {
+    width: 100%;  /* Ensures the card uses all available space within the column */
+    max-width: 500px; /* Optional: limits card width on larger screens */
+    margin: 0 auto; /* Centers the card in the column */
+    margin-top: -30px; 
+  }
+.services-section {
+    padding-top: 40px; /* Increase padding to push services down */
+  }
+
+  /* src/components/styles/custom.css */
+
+/* src/components/styles/custom.css */
+/* src/components/styles/custom.css */
+
+.data-section {
+    background-color: #EAD6F5; /* Light purple background */
+    padding: 50px 0; /* Reduced padding */
+    text-align: center;
+   /* Increase negative margin to pull the section up */
+  }
+  
+  .data-section-title {
+    padding-top: 20px;
+    margin-bottom: 30px; /* Space before the data points start */
+  }
+  
+  .data-section-title h2 {
+    color: #333;
+    font-size: 28px; /* Match other titles in size and color */
+    margin-bottom: 20px; /* Adjust bottom margin for title */
+  }
+  
+  .data-point {
+    color: #333; /* Dark text for readability */
+    margin-bottom: 20px; /* Pulls the service cards into the purple area */
+  }
+  
+  .data-point h3 {
+    font-size: 24px; /* Larger font size for the numbers */
+    color: #4A33D1; /* Purple color for numbers to stand out */
+  }
+  
+  .data-point p {
+    font-size: 16px;
+  }
+  
+  .separator {
+    border-left: 2px solid #C2AED9; /* Light purple border for separator */
+    border-right: 2px solid #C2AED9; /* Light purple border for separator */
+  }
+  
+  /* Responsive adjustments for smaller screens */
+  @media (max-width: 768px) {
+    .separator {
+      border-left: none;
+      border-right: none;
+      border-top: 1px solid #C2AED9; /* Top border for horizontal separation */
+      border-bottom: 1px solid #C2AED9; /* Bottom border for horizontal separation */
+    }
+    .data-point {
+      margin-bottom: 0; /* Reset margin for mobile to avoid overlap */
+    }
+  }
+
+  @media (max-width: 768px) {
+    .app-header {
+      padding: 10px; /* Smaller padding on smaller screens */
+    }
+  
+    .logo {
+      height: 40px; /* Smaller logo on mobile devices */
+    }
+  
+  }
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    50% {
+      transform: scale(1.1);
+      opacity: 0.9;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  .pulse-animation {
+    animation: pulse 2s infinite;
+  }
+
+.button-hover-effect {
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.button-hover-effect:hover {
+  background-color: #2de266;  /* Darker shade of the primary color */
+  transform: scale(1.05);     /* Slightly increase the button size */
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2); /* Adding some shadow for depth */
+}
+  
