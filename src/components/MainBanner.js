@@ -9,18 +9,15 @@ import leftImage from './banner-left.png'; // Path to your left image file
 const MainBanner = () => {
   return (
     <div className={styles.bannerContainer}>
-      
-        <div className={styles.centerColumn}>
+      <div className={styles.centerColumn}>
         <div className={styles.textContent}>
           <h1>Visualizando el futuro agrícola</h1>
-          <p>Lorem ipsum dolor sit amet consectetur. Solicitudin magna sollicitudin quis amet. Magna eget vivamus purus viverra dictumst diam cras aliquam.</p>
-          <Button className="button-hover-effect pulse-animation" type="primary" size="large">Agenda tu asesoría </Button>        
+          <p>Lorem ipsum dolor sit amet consectetur. Solicitudin magna sollicitudin quis amet. Magna eget vivamus purus viverra dictumst diam cras aliquam.</p>         
         </div>
-        </div>
-      
+        <Button className="button-hover-effect pulse-animation" type="primary" size="large">Agenda tu asesoría</Button>
+      </div>
       <div className={styles.rightColumn}>
-      <img src={leftImage} alt="Data Visualization Icons" className={styles.bannerImage} />
-
+        <img src={leftImage} alt="Data Visualization Icons" className={styles.bannerImage} />
       </div>
     </div>
   );

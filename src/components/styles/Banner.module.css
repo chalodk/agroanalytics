@@ -15,6 +15,7 @@
   position: relative;
   z-index: 1;
   width: 100%;
+  align-items: center;
   
   
 }
@@ -40,7 +41,9 @@
   
   .centerColumn {
     display: block;
+    text-align: center;
   }
+  
   .rightColumn {
     display: none;
   }
@@ -59,7 +62,7 @@
     p {
       font-size: 14px;
       word-wrap: break-word;
-      justify-content: center;
+      text-align: left;
     }
   }
   
@@ -70,8 +73,6 @@
   padding: 30px;
  
 }
-
-
 
 .bannerButton:hover {
   background-color: #372774; /* Darker shade for hover effect */

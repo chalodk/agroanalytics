@@ -40,6 +40,7 @@ body {
 .ant-btn {
     border-radius: 10px; /* Rounded corners */
     transition: background-color 0.3s, border-color 0.3s, color 0.3s; /* Smooth transitions */
+    width:60%;
 }
 
 /* Primary button styling */
@@ -180,38 +181,34 @@ p {
   }
   
   .data-section-title h2 {
-    color: #333;
+    color: #2E2C44;
     font-size: 28px; /* Match other titles in size and color */
     margin-bottom: 20px; /* Adjust bottom margin for title */
   }
   
   .data-point {
-    color: #333; /* Dark text for readability */
+    color: #2E2C44; /* Dark text for readability */
     margin-bottom: 20px; /* Pulls the service cards into the purple area */
   }
   
   .data-point h3 {
     font-size: 24px; /* Larger font size for the numbers */
-    color: #4A33D1; /* Purple color for numbers to stand out */
+    color: #2E2C44; /* Purple color for numbers to stand out */
   }
   
   .data-point p {
     font-size: 16px;
+    
   }
   
   .separator {
-    border-left: 2px solid #C2AED9; /* Light purple border for separator */
-    border-right: 2px solid #C2AED9; /* Light purple border for separator */
+    border-left: 2px solid #2E2C44; /* Light purple border for separator */
+    border-right: 2px solid #2E2C44; /* Light purple border for separator */
   }
   
   /* Responsive adjustments for smaller screens */
   @media (max-width: 768px) {
-    .separator {
-      border-left: none;
-      border-right: none;
-      border-top: 1px solid #C2AED9; /* Top border for horizontal separation */
-      border-bottom: 1px solid #C2AED9; /* Bottom border for horizontal separation */
-    }
+    
     .data-point {
       margin-bottom: 0; /* Reset margin for mobile to avoid overlap */
     }
