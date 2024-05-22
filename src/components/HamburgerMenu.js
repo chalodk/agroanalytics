@@ -1,6 +1,8 @@
+// HamburgerMenu.js
 import React, { useState } from 'react';
 import { Drawer, Button, Menu } from 'antd';
 import { MenuOutlined } from '@ant-design/icons';
+import './styles/HamburgerMenu.css';  // Import the CSS file
 
 const HamburgerMenu = () => {
     const [visible, setVisible] = useState(false);
@@ -16,11 +18,11 @@ const HamburgerMenu = () => {
     return (
         <>
             <Button className="menu-button" type="primary" onClick={showDrawer} icon={<MenuOutlined />}>
-                Menu
+                
             </Button>
             <Drawer
                 title="Menu"
-                placement="left"
+                placement="right"
                 onClick={onClose}
                 onClose={onClose}
                 visible={visible}

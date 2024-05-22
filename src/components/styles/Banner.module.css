@@ -4,16 +4,10 @@
   align-items: center;
   justify-content: space-between;
   padding: 20px;
-  background-image: url('/Users/Chalo/Documents/Agroanalytics/Proyectos/Landing/landing/src/components/banner-right.png'); /* Replace with the actual path to your image */
+  background-image: url('/Users/Chalo/Documents/Agroanalytics/Proyectos/Landing/landing/src/components/fondo.png');
+  background-size: cover; /* Replace with the actual path to your image */
 }
 
-.leftColumn {
-  flex: 1;
-  display: flex;
-  align-items: center; /* Vertical alignment */
-  justify-content: center; /* Horizontal alignment */
-  width: 100%;
-}
 
 .centerColumn {
   flex: 1;
@@ -25,26 +19,27 @@
   
 }
 .rightColumn {
-  flex: 1;
+  flex:1 ;
   padding: 20px;
   position: relative;
-  left: -300px;
+  left: 50px;
   z-index: 0;
   width: 100%;
 }
 
 .textContent {
-  max-width: 400px; /* Adjust width according to your design preference */
+  max-width: 500px; /* Adjust width according to your design preference */
 
 }
 @media (max-width: 768px) {
   .bannerContainer {
-      height: 300px; /* Smaller height for mobile devices */
-      justify-content: center;
+      height: 500px; /* Smaller height for mobile devices */
+      justify-content: space-between;
+      align-items: center;
   }
   
   .centerColumn {
-    display: none;
+    display: block;
   }
   .rightColumn {
     display: none;
@@ -55,7 +50,10 @@
     
     
     h1 {
-      font-size: 20px;
+      font-size: 40px;
+      font: Helvetica;
+      font-weight: 700;
+      color:#9D95E8;
     
     }
     p {
@@ -67,21 +65,13 @@
   
 }
 .bannerImage {
-  width: 100%;
+  width: 75%;
   height: auto;
   padding: 30px;
  
 }
 
-.bannerButton {
-  background-color: #4C3F91; /* Primary button color */
-  border: none;
-  color: white;
-  padding: 10px 20px;
-  cursor: pointer;
-  font-size: 16px;
-  transition: background-color 0.3s ease;
-}
+
 
 .bannerButton:hover {
   background-color: #372774; /* Darker shade for hover effect */
@@ -94,7 +84,7 @@ body {
 
 p {
   font-size: 1rem;
-  color: #666;
+  
 }
 
 .container {
@@ -109,8 +99,8 @@ p {
 }
 
 h1 {
-  font-size: 24px; /* Adjust size to suit design */
-  color: #333;
+  font-size: 50px; /* Adjust size to suit design */
+  color: #9D95E8;
 }
 
 p {
