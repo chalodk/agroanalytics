@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import { Drawer, Button, Menu } from 'antd';
 import { MenuOutlined } from '@ant-design/icons';
+import { WhatsAppOutlined } from '@ant-design/icons';
 import './styles/HamburgerMenu.css';  // Import the CSS file
 
 const HamburgerMenu = () => {
@@ -36,8 +37,8 @@ const HamburgerMenu = () => {
                     <Menu.Item key="3">Asesorias</Menu.Item>
                     <Menu.Item key="4">Trazabilidad</Menu.Item>
                     <Menu.Item key="5">Demo</Menu.Item>
-                    <Menu.Item key="6"><Button type="primary" size="large">Contáctanos</Button></Menu.Item>
                 </Menu>
+                <Button type="secondary" size="large">Contáctanos <WhatsAppOutlined WhatsAppOutlinedColor="#95D414" /></Button>
             </Drawer>
         </>
     );

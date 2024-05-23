@@ -32,11 +32,15 @@
   max-width: 500px; /* Adjust width according to your design preference */
 
 }
+.mainBannerImage{
+  display:none;
+}
 @media (max-width: 768px) {
   .bannerContainer {
       height: 500px; /* Smaller height for mobile devices */
       justify-content: space-between;
       align-items: center;
+      
   }
   
   .centerColumn {
@@ -50,23 +54,37 @@
   .textContent {
     height: auto; /* Adjust width according to your design preference */
     background-image:url('/Users/Chalo/Documents/Agroanalytics/Proyectos/Landing/landing/src/components/fondo.png') ;
+   
     
     
     h1 {
-      font-size: 40px;
+      font-size: 30px;
       font: Helvetica;
       font-weight: 700;
       color:#9D95E8;
+      text-align: right;
+   
     
     }
     p {
       font-size: 14px;
       word-wrap: break-word;
-      text-align: left;
+      text-align: center;
     }
   }
-  
+  .centerColumn {
+    position: relative; /* This makes it a reference point for absolute positioning */
+  }
+  .mainBannerImage{
+    display:block;
+    position: absolute;
+    z-index: -100;
+    width: 125%;
+    left: -70px;
+    bottom: 150px;
+  }
 }
+
 .bannerImage {
   width: 75%;
   height: auto;

@@ -10,11 +10,14 @@ const MainBanner = () => {
   return (
     <div className={styles.bannerContainer}>
       <div className={styles.centerColumn}>
-        <div className={styles.textContent}>
-          <h1>Visualizando el futuro agrícola</h1>
-          <p>Lorem ipsum dolor sit amet consectetur. Solicitudin magna sollicitudin quis amet. Magna eget vivamus purus viverra dictumst diam cras aliquam.</p>         
+        <div className={styles.mainBannerImage}>
+          <img src={leftImage} alt='Data visualization Icons' className={styles.bannerImage}/>
         </div>
-        <Button className="button-hover-effect pulse-animation" type="primary" size="large">Agenda tu asesoría</Button>
+        <div className={styles.textContent}>
+          <h1> Calidad, experiencia y confianza </h1>
+          <p>Los procesos agrícolas de siempre, con la tecnología del mañana.</p>         
+        </div>
+        <Button className="button-hover-effect pulse-animation" type="primary" size="large">Agenda tu asesoría </Button>
       </div>
       <div className={styles.rightColumn}>
         <img src={leftImage} alt="Data Visualization Icons" className={styles.bannerImage} />
