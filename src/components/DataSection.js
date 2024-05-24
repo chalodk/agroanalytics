@@ -18,7 +18,7 @@ const DataSection = () => {
         </Col>
         <Col xs={24} sm={12} md={8} className="data-point">
           <h3>SAG</h3>
-          <p>Contraparte certificado</p>
+          <p>Contraparte profesional certificado</p>
         </Col>
       </Row>
     </div>

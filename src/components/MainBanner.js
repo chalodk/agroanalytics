@@ -14,7 +14,7 @@ const MainBanner = () => {
           <img src={leftImage} alt='Data visualization Icons' className={styles.bannerImage}/>
         </div>
         <div className={styles.textContent}>
-          <h1> Calidad, experiencia y confianza </h1>
+          <h1> EXPERTOS DEL AGRO Y LA TECNOLOGÍA </h1>
           <p>Los procesos agrícolas de siempre, con la tecnología del mañana.</p>         
         </div>
         <Button className="button-hover-effect pulse-animation" type="primary" size="large">Agenda tu asesoría </Button>

@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 20px;
-  background-image: url('/Users/Chalo/Documents/Agroanalytics/Proyectos/Landing/landing/src/components/fondo.png');
+  background-image: url('~/src/components/fondo.png');
   background-size: cover; /* Replace with the actual path to your image */
 }
 
@@ -37,12 +37,11 @@
 }
 @media (max-width: 768px) {
   .bannerContainer {
-      height: 500px; /* Smaller height for mobile devices */
-      justify-content: space-between;
-      align-items: center;
+      height: 700px; /* Smaller height for mobile devices */
       
+      justify-content: space-between;
+      align-items: center;   
   }
-  
   .centerColumn {
     display: block;
     text-align: center;
@@ -53,18 +52,13 @@
   }
   .textContent {
     height: auto; /* Adjust width according to your design preference */
-    background-image:url('/Users/Chalo/Documents/Agroanalytics/Proyectos/Landing/landing/src/components/fondo.png') ;
-   
-    
-    
+    background-image:url('~/src/components/fondo.png') ;
     h1 {
       font-size: 30px;
       font: Helvetica;
       font-weight: 700;
       color:#9D95E8;
       text-align: right;
-   
-    
     }
     p {
       font-size: 14px;
@@ -81,47 +75,36 @@
     z-index: -100;
     width: 125%;
     left: -70px;
-    bottom: 150px;
+    bottom: 80px;
   }
 }
-
 .bannerImage {
   width: 75%;
   height: auto;
   padding: 30px;
- 
 }
-
 .bannerButton:hover {
   background-color: #372774; /* Darker shade for hover effect */
 }
-
 body {
   font-family: 'Arial', sans-serif; /* Adjust the font-family as per design requirement */
 }
-
-
 p {
   font-size: 1rem;
-  
 }
-
 .container {
   padding: 20px;
 }
-
 .section {
   margin-bottom: 40px;
 }
 .header {
   margin-bottom: 20px;
 }
-
 h1 {
   font-size: 50px; /* Adjust size to suit design */
   color: #9D95E8;
 }
-
 p {
   font-size: 16px;
   color: #666;
