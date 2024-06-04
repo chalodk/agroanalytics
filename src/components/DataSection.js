@@ -1,11 +1,12 @@
 import React from 'react';
 import { Row, Col } from 'antd';
 
+
 const DataSection = () => {
   return (
     <div className="data-section">
         <div className="data-section-title">
-        <h2>Controla tus operaciones basándote en datos</h2>
+        <h2>La experiencia da confianza</h2>
       </div>
       <Row gutter={[16, 24]} justify="space-around">
         <Col xs={24} sm={12} md={8} className="data-point">

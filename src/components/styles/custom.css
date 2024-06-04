@@ -49,13 +49,13 @@ body {
 /* Primary button styling adjustments */
 .ant-btn-primary {
   background-color: #95D414; /* Primary green color */
-  border-color: #DCECFF;
-    color: white; /* Ensuring text is white */
-    transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+  border-color: #2E2C44;
+  color:#2E2C44; /* Ensuring text is white */
+  transition: background-color 0.3s, border-color 0.3s, color 0.3s;
 }
 .ant-btn-secondary {
   background-color: #DEEFA8; /* Primary green color */
-  border-color: #DCECFF;
+  border-color: #DEEFA8;
   color:#2E2C44 ; /* Ensuring text is white */
   transition: background-color 0.3s, border-color 0.3s, color 0.3s;
 }
@@ -188,7 +188,7 @@ p {
     color: #9D95E8;
     font-size: 25px; /* Match other titles in size and color */
     margin-bottom: 20px; /* Adjust bottom margin for title */
-    font-weight: 600;
+    font-weight: 1000;
   }
   
   .data-point {
@@ -252,6 +252,9 @@ p {
     .big-image{
       width: 100%;
     }
+    .data-section {
+      background-size: 600px;
+    }
   
   }
   @keyframes pulse {
@@ -279,7 +282,7 @@ p {
 }
 
 .button-hover-effect:hover {
-  background-color: #2de266;  /* Darker shade of the primary color */
+  background-color: #DCECFF;  /* Darker shade of the primary color */
   transform: scale(1.05);     /* Slightly increase the button size */
   box-shadow: 0 4px 20px rgba(0,0,0,0.2); /* Adding some shadow for depth */
 }

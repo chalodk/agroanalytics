@@ -1,14 +1,3 @@
-.bannerContainer {
-  height: 500px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 20px;
-  background-image: url('~/src/components/fondo.png');
-  background-size: cover; /* Replace with the actual path to your image */
-}
-
-
 .centerColumn {
   flex: 1;
   padding: 20px;
@@ -37,52 +26,46 @@
 }
 @media (max-width: 768px) {
   .bannerContainer {
-      height: 700px; /* Smaller height for mobile devices */
-      
-      justify-content: space-between;
-      align-items: center;   
+    height: 600px;
+    display: block;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-image: url('~/src/components/banner-right.png');
+    background-size: cover; /* Replace with the actual path to your image */
   }
+  .bannerButton {
+    bottom: 0px;
+  }
+  
   .centerColumn {
     display: block;
     text-align: center;
+
   }
-  
   .rightColumn {
     display: none;
   }
   .textContent {
-    height: auto; /* Adjust width according to your design preference */
-    background-image:url('~/src/components/fondo.png') ;
+    position: flex;
     h1 {
       font-size: 30px;
       font: Helvetica;
       font-weight: 700;
       color:#9D95E8;
-      text-align: right;
+      text-align: left;
     }
     p {
       font-size: 14px;
       word-wrap: break-word;
       text-align: center;
+      width: 50%;
     }
   }
-  .centerColumn {
-    position: relative; /* This makes it a reference point for absolute positioning */
-  }
-  .mainBannerImage{
-    display:block;
-    position: absolute;
-    z-index: -100;
-    width: 125%;
-    left: -70px;
-    bottom: 80px;
-  }
+ 
+  
 }
-.bannerImage {
-  width: 75%;
-  height: auto;
-  padding: 30px;
-}
+
 .bannerButton:hover {
   background-color: #372774; /* Darker shade for hover effect */
 }
