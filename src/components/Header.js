@@ -10,12 +10,11 @@ import logo from './logo.png'; // Path to your left image file
 const Header = () => {
     return (
         <>
-            {/* Hamburger Menu: Visible on mobile only */}
+        
             <div className="mobileVisible">
-            <img src={logo} alt="Logo" className="logo" />
+                <img src={logo} alt="Logo" className="logo" />
                 <HamburgerMenu/>
             </div>
-            {/* Horizontal Menu: Visible on desktop only */}
             <div className="desktopVisible">
                 <Row align="middle" justify="space-between">
                     <Col>
