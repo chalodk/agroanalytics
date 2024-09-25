@@ -48,7 +48,7 @@ const ServicesSection = () => {
               <Col xs={24} sm={24} md={8} lg={8} xl={8}>
               <img src={service3image} alt="Business intelligence" className="service-image" />
 
-               <p> Alertas, notificaciones y reportería avanzada usando datos del proceso.</p> 
+               <p> Alertas, notificaciones y reportería avanzada aprovechando tus datos.</p> 
               </Col>
               <Button onClick={openWhatsApp} className="button-hover-effect" type='secondary' size="large" style={{ marginLeft: 20 }}>Saber más </Button>       
 

@@ -21,8 +21,8 @@ const MainBanner = () => {
           <img src={leftImage} alt='Data visualization Icons' className={styles.bannerImage}/>
         </div>
         <div className={styles.textContent}>
-          <h1> Tu partner de transformación digital agrícola </h1>
-          <p>Te acompañamos y aseguramos el éxito. </p>         
+          <h1> Tu partner en transformación digital agrícola </h1>
+          <p> Experiencia y tecnología </p>         
         </div>
         <div className='bannerButton'>
         <Button onClick={openWhatsApp} className="button-hover-effect pulse-animation" type="primary" size="large">Agenda tu asesoría </Button>
