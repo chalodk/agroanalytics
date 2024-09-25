@@ -7,7 +7,7 @@ import leftImage from './banner-left.png'; // Path to your left image file
 //import rightImage from './banner-right.png'; // Path to your right image file
 
 const MainBanner = () => {
-  const phoneNumber = '56974884316'; // Your phone number in international format without '+' and spaces
+  const phoneNumber = '56997023645'; // Your phone number in international format without '+' and spaces
     const message = 'Hola! me gustaría agendar una sesión de asesoría gratuita con Agroanalytics'; // Optional predefined message
 
     const openWhatsApp = () => {
@@ -21,7 +21,7 @@ const MainBanner = () => {
           <img src={leftImage} alt='Data visualization Icons' className={styles.bannerImage}/>
         </div>
         <div className={styles.textContent}>
-          <h1> Visualizando el presente y futuro agrícola </h1>
+          <h1> Tu partner de transformación digital agrícola </h1>
           <p>Te acompañamos y aseguramos el éxito. </p>         
         </div>
         <div className='bannerButton'>

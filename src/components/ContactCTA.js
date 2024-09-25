@@ -7,7 +7,7 @@ import { WhatsAppOutlined } from '@ant-design/icons';
 
 
 const ContactCTA = () => {
-    const phoneNumber = '56974884316'; // Your phone number in international format without '+' and spaces
+    const phoneNumber = '56997023645'; // Your phone number in international format without '+' and spaces
     const message = 'Hola! me interesa saber más de los servicios de Agroanalytics'; // Optional predefined message
 
     const openWhatsApp = () => {

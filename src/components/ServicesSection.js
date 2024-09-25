@@ -9,7 +9,7 @@ import { Button } from 'antd';
 
 const ServicesSection = () => {
 
-  const phoneNumber = '56974884316'; // Your phone number in international format without '+' and spaces
+  const phoneNumber = '56997023645'; // Your phone number in international format without '+' and spaces
     const message = 'Hola! me interesa saber más de los servicios de Agroanalytics'; // Optional predefined message
 
     const openWhatsApp = () => {
@@ -35,7 +35,7 @@ const ServicesSection = () => {
             <Row gutter={[16, 24]} justify="space-around">
               <Col xs={24} sm={24} md={8} lg={8} xl={8}>
               <img src={service2image} alt="Projects evaluation" className="service-image" />
-               <p>Diseñamos, implementamos y mejoramos sistemas de trazabilidad a lo largo de tu cadena logística.</p> 
+               <p>Diseñamos, implementamos y mejoramos sistemas de trazabilidad a lo largo de tu cadena productiva y logística.</p> 
               </Col>
               <Button onClick={openWhatsApp} className="button-hover-effect" type='secondary' size="large" style={{ marginLeft: 20 }}>Saber más </Button>       
             </Row>
