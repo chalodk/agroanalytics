@@ -1,29 +1,35 @@
-.centerColumn {
-  flex: 1;
-  padding: 20px;
-  position: relative;
-  z-index: 1;
-  width: 100%;
-  align-items: center;
-  
-  
-}
-.rightColumn {
-  flex:1 ;
-  padding: 20px;
-  position: relative;
-  left: 50px;
-  z-index: 0;
-  width: 100%;
+/* Estilos generales */
+body {
+  font-family: 'Arial', sans-serif;
 }
 
-.textContent {
-  max-width: 500px; /* Adjust width according to your design preference */
+p {
+  font-size: 16px;
+  color: #666;
+}
 
+h1 {
+  font-size: 50px;
+  color: #9D95E8;
 }
-.mainBannerImage{
-  display:none;
+
+.container {
+  padding: 20px;
 }
+
+.section {
+  margin-bottom: 40px;
+}
+
+.header {
+  margin-bottom: 20px;
+}
+
+.bannerButton:hover {
+  background-color: #372774;
+}
+
+/* Estilos para dispositivos móviles */
 @media (max-width: 768px) {
   .bannerContainer {
     height: 600px;
@@ -32,27 +38,25 @@
     justify-content: space-between;
     padding: 20px;
     background-image: url('~/src/components/banner-right.png');
-    background-size: cover; /* Replace with the actual path to your image */
+    background-size: cover;
   }
-  .bannerButton {
-    bottom: 0px;
-  }
-  
+
   .centerColumn {
     display: block;
     text-align: center;
-
   }
+
   .rightColumn {
     display: none;
   }
+
   .textContent {
     position: flex;
     h1 {
       font-size: 30px;
       font: Helvetica;
       font-weight: 700;
-      color:#9D95E8;
+      color: #9D95E8;
       text-align: left;
     }
     p {
@@ -62,37 +66,64 @@
       width: 50%;
     }
   }
+
+  .mainBannerImage {
+    display: none;
+  }
+
+  .bannerButton {
+    bottom: 0px;
+  }
+}
+
+/* Estilos para dispositivos de escritorio */
+@media screen and (min-width: 768px) {
+  .bannerContainer {
+    width: 100%;
+    max-width: 1920px;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    margin: 0 auto;
+    background-image: url('/Users/Chalo/Documents/Agroanalytics/Proyectos/Landing/landing/src/components/banner-right.png'); /* Ruta a tu imagen de fondo */
+    background-size: cover; /* Asegura que la imagen cubra todo el contenedor */
+    background-position: center; /* Centra la imagen de fondo */
+  }
+
+
+
  
-  
-}
 
-.bannerButton:hover {
-  background-color: #372774; /* Darker shade for hover effect */
-}
-body {
-  font-family: 'Arial', sans-serif; /* Adjust the font-family as per design requirement */
-}
-p {
-  font-size: 1rem;
-}
-.container {
-  padding: 20px;
-}
-.section {
-  margin-bottom: 40px;
-}
-.header {
-  margin-bottom: 20px;
-}
-h1 {
-  font-size: 50px; /* Adjust size to suit design */
-  color: #9D95E8;
-}
-p {
-  font-size: 16px;
-  color: #666;
-}
+ 
 
-/* Further adjustments based on specific layout needs */
+ 
+  .textContent {
+    flex: 1;
+    color: white; /* Asegúrate de que el texto sea visible sobre la imagen de fondo */
+    max-width: 75%;
+    max-height: 35%; /* Limita el ancho del texto para que no ocupe todo el espacio */
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.708); /* Fondo semitransparente para mejorar la legibilidad del texto */
+    border-radius: 8px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
 
-/* Additional specific styles can be added here */
+  .textContent h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+
+  .textContent p {
+    font-size: 20px;
+    width: 100%;
+    color: #9D95E8;
+  }
+
+  .bannerButton {
+    align-self: flex-start;
+  }
+}

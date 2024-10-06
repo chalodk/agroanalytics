@@ -28,8 +28,13 @@ body {
 
 .main-banner, .contact-cta {
     text-align: center;
+    max-width: 100%;
     padding: 50px 20px;
     background-color: #FFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
 
@@ -251,11 +256,18 @@ p {
     }
     .big-image{
       width: 100%;
+      
     }
     .data-section {
       background-size: 600px;
     }
   
+  }
+  @media (min-width: 768px) {
+    .big-image {
+      width: 30%;
+      height: auto;
+    }
   }
   @keyframes pulse {
     0% {
