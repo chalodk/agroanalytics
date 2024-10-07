@@ -25,9 +25,9 @@ const ServicesSection = () => {
           </Card>
         </Col>
         <Col xs={24} sm={24} md={8} lg={8} xl={8}>
-          <Card title="Trazabilidad" className='service-card-title' style={{ textAlign: 'center' }}>
+          <Card title="Transformación Digital" className='service-card-title-principal' style={{ textAlign: 'center' }}>
             <img src={service2image} alt="Projects evaluation" className="service-image" style={{ width: '100px', height: '100px', marginBottom: '20px' }} />
-            <p>Diseñamos, implementamos y mejoramos sistemas de trazabilidad a lo largo de tu cadena productiva y logística.</p>
+            <p>Diseñamos, implementamos y mejoramos los sistemas a lo largo de tu cadena productiva y logística a través de transformación digital a la medida.</p>
             <Button onClick={openWhatsApp} className="button-hover-effect" type='primary' size="large">Saber más</Button>
           </Card>
         </Col>

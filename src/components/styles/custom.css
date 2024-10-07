@@ -172,6 +172,10 @@ p {
   .service-card-title{
       text-align: center;
   }
+  .service-card-title-principal{
+    text-align: center;
+    color: #ea14d5; /* Color oscuro para el título */
+  }
  
   .service-image {
     width:150px;
@@ -230,9 +234,10 @@ p {
     .service-card-title {
       color: #9D95E8;
   }
+  .service-card-title-principal {
+    color: #9D95E8;
   }
-
-  @media (max-width: 768px) {
+  
     .app-header {
       padding: 10px; /* Smaller padding on smaller screens */
     }
