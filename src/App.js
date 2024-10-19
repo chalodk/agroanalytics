@@ -14,7 +14,6 @@ import { Collapse } from 'antd';
 
 const { Panel } = Collapse;
 
-
 function App() {
   const [expandido, setExpandido] = useState(false);
 
@@ -22,13 +21,18 @@ function App() {
     setExpandido(!expandido);
   };
   return (
-    
     <div className="App">
       <Header />
       <MainBanner />
-      <DataSection />
-      <ServicesSection />
-      <ContactCTA />
+      <section id="datos">
+        <DataSection />
+      </section>
+      <section id="servicios">
+        <ServicesSection />
+      </section>
+      
+        <ContactCTA />
+      <section id="contacto">
       <div className="terminos-y-condiciones">
         
         <Collapse activeKey={expandido ? ['1'] : []} onChange={alternarExpandido}>
@@ -37,6 +41,7 @@ function App() {
           </Panel>
         </Collapse>
       </div>
+      </section>
       <Footer />
       
     </div>

@@ -1,6 +1,6 @@
 // Header.js
 import React from 'react';
-import { Row, Col, Menu, Button } from 'antd';
+import { Row, Col, Menu } from 'antd';
 //import { MenuOutlined } from '@ant-design/icons';
 import HamburgerMenu from './HamburgerMenu';
 import './styles/Header.css';  // Import the CSS file
@@ -20,13 +20,13 @@ const Header = () => {
                     <Col>
                         <img src={logo} alt="Logo" className="logo" />
                     </Col>
+                    
                     <Col>
                         <Menu mode="horizontal" theme="light">
                             <Menu.Item key="home">Homepage</Menu.Item>
-                            <Menu.Item key="about">Nosotros</Menu.Item>
-                            <Menu.Item key="services">Asesorias</Menu.Item>
-                            <Menu.Item key="traceability">Trazabilidad</Menu.Item>
-                            <Menu.Item key="contact"><Button type="primary" size="large">Contáctanos</Button></Menu.Item>
+                            <Menu.Item key="about"><a href="#datos">Nosotros</a></Menu.Item>
+                            <Menu.Item key="services"><a href="#datos">Asesorías</a></Menu.Item>
+                            <Menu.Item key="traceability"><a href="#datos">Tecnología</a></Menu.Item>
                         </Menu>
                         <Menu mode="horizontal" theme="light"></Menu>
                     </Col>

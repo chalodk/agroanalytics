@@ -32,3 +32,8 @@
       }
     
 }
+.menu {
+    width: 75%; /* El menú ocupará el 75% del ancho */
+    float: right; /* Posiciona el menú a la derecha */
+    /* Otras propiedades de estilo que puedas necesitar */
+}
